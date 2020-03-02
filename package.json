@@ -12,8 +12,8 @@
     "icon": "static/images/1.jpg",
     "toolbar": true,
     "frame": true,
-    "width": 1440,
-    "height": 875,
+    "width": 1180,
+    "height": 724,
     "position": "center",
     "min_width": 400,
     "min_height": 200
