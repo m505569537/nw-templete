@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const tsImportPluginFactory = require("ts-import-plugin");
 
+const modifyVars = require('./config/modifyVars.less')
+
 module.exports = env => {
   const config = {
     mode: env === "development" ? "development" : "production",
@@ -56,6 +58,7 @@ module.exports = env => {
               loader: "less-loader",
               options: {
                 sourceMap: true,
+                modifyVars,
                 javascriptEnabled: true
               }
             }

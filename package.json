@@ -4,7 +4,7 @@
   "description": "",
   "main": "./app/index.html",
   "scripts": {
-    "build": "webpack --env=development",
+    "build": "webpack --env=development -w",
     "start": "cd ../nwjs-sdk && nwjs.app/Contents/MacOS/nwjs ../nw-template"
   },
   "window": {
